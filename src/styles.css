@@ -1,32 +1,81 @@
+
+ html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 * {
-   font-family: Helvetica, Arial, sans-serif;
-   background-color: rgb(234, 234, 234);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+ html, body{
+  padding: 0;
+  margin: 0;
+  background-color: rgb(234, 234, 234);
  }
  
- body {
+ .main {
    padding: 60px;
  }
  
  input {
    background-color: white;
    border-radius: 5px;
-   border: 1px solid rgb(97, 32, 158);
-   color: black;
+   border: none;
+   color: #444444;
    font-size: 1.2rem;
    outline: none;
    padding: 10px 15px;
    width: 100%;
+   max-width: 400px;
+   margin: auto;
+   display: block;
+ }
+ .header{
+  background-color: #009DC5;
+  padding: 30px 20px;
  }
  
+ h1 {
+   font-size: 1.7rem;
+    text-align: center;
+    color: #ffffff;
+ }
  h2 {
    font-size: 1.5rem;
  }
  
  h3 {
-   font-size: 3rem;
-   margin-bottom: 5px;
+   font-size: 1.4rem;
+   margin-bottom: 15px;
+   color: #ffffff;
+   background-color: olivedrab;
+   padding: 10px;
+   text-align: center;
+
  }
- 
+
+ button{
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+  max-width: 200px;
+  border: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: olivedrab;
+  color: #ffffff;
+  transition: all .3s ease-in-out;
+ }
+ button:hover{
+  background-color: olivedrab;
+  box-shadow: none;
+ }
  .card-grid {
    display: flex;
    flex-direction: row;

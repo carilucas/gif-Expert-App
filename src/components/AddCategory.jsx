@@ -28,7 +28,7 @@ export const AddCategory = ({onAddCategory}) => {
          onClick={onFormSubmit}
          type="submit"
       >
-         Agregar
+         Buscar
       </button>
     </form>
   )
